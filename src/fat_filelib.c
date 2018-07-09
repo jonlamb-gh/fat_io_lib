@@ -39,6 +39,7 @@
 #include "fat_string.h"
 #include "fat_filelib.h"
 #include "fat_cache.h"
+#include "fat_format.h"
 
 //-----------------------------------------------------------------------------
 // Locals
@@ -63,7 +64,7 @@ static struct fat_list    _free_file_list;
 //-----------------------------------------------------------------------------
 // Local Functions
 //-----------------------------------------------------------------------------
-static void                _fl_init();
+static void                _fl_init(void);
 
 //-----------------------------------------------------------------------------
 // _allocate_file: Find a slot in the open files buffer for a new file
