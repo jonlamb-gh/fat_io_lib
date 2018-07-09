@@ -39,9 +39,8 @@ target_include_directories(
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/fat>
     $<INSTALL_INTERFACE:include>)
 
-# this makes the project importable from the build directory
-export(
-    TARGETS
+target_link_libraries(
     fatio
-    FILE
-    LibFatIOConfig.cmake)
+    Configuration
+    muslc
+    utils)

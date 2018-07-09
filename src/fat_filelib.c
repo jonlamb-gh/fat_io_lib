@@ -1494,7 +1494,7 @@ void fl_listdirectory(const char *path)
             }
             else
             {
-                FAT_PRINTF(("%s [%d bytes]\r\n", dirent.filename, dirent.size));
+                FAT_PRINTF(("%s [%lu bytes]\r\n", dirent.filename, dirent.size));
             }
         }
 
